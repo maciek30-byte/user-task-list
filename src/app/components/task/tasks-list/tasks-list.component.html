@@ -1,0 +1,5 @@
+<div class="wrapper">
+  @for (task of taskList; track task.id) {
+    <app-task-item [userTask]="task" />
+  }
+</div>

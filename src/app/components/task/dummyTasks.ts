@@ -24,4 +24,3 @@ export const TASKS = [
   },
 ];
 
-export type Task = typeof TASKS

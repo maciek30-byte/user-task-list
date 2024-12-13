@@ -1,0 +1,13 @@
+<section id="tasks">
+  <header>
+    <h2>{{ user.name }}</h2>
+    <menu>
+      <button>Add Task</button>
+    </menu>
+  </header>
+  @if (selectedUserTasks.length > 0) {
+    <app-tasks-list [taskList]="selectedUserTasks" />
+  } @else {
+    <h2>No users Tasks</h2>
+  }
+</section>

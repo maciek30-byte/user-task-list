@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import {HeaderComponent} from './components/header/header.component';
 import {DUMMY_USERS, USER} from './components/user/dummyUsers';
 import {UserComponent} from './components/user/user.component';
-import {UserDetailsComponent} from './components/user-details/user-details.component';
+import {UserPanelComponent} from './components/user-panel/user-panel.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, UserComponent, UserDetailsComponent],
+  imports: [HeaderComponent, UserComponent, UserPanelComponent],
   templateUrl:"app.component.html",
   styleUrl: './app.component.css',
 })
