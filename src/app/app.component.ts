@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import {HeaderComponent} from './components/header/header.component';
-import {DUMMY_USERS, USER} from './components/user/dummyUsers';
-import {UserComponent} from './components/user/user.component';
-import {UserPanelComponent} from './components/user-panel/user-panel.component';
+import {HeaderComponent} from '../components/header/header.component';
+import {DUMMY_USERS, USER} from '../components/user/dummyUsers';
+import {UserComponent} from '../components/user/user.component';
+import {UserPanelComponent} from '../components/user-panel/user-panel.component';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +22,5 @@ export class AppComponent {
     }
 
     this.selectedUser = user;
-    console.log('this is selected user', this.selectedUser);
   }
 }

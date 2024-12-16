@@ -1,0 +1,13 @@
+<section id="tasks">
+  <header>
+    <h2>{{ user.name }}</h2>
+    <menu>
+      <button (click)="openAddTaskModal()">Add Task</button>
+    </menu>
+  </header>
+  @if (isAddTaskModalOpen) {
+    <app-add-task-modal (onCloseModal)="closeAddTaskModal()" [userId]="user.id" />
+  }
+
+  <app-tasks-list [userId]="user.id" />
+</section>
